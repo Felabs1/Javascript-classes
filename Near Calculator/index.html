@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html> -->
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Near Calc</title>
+	<link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+	<div>
+		<table>
+			<caption>NEAR Calc</caption>
+			<tr>
+				<td colspan="3"><input type="text" name="screen" id="screen"></td>
+				<td rowspan="2"><button class="clear" onclick="clearInput()">Clear</button></td>
+			</tr>
+			<tr>
+				<td colspan="3"><input type="text" value="0" style="text-align: right;" readonly name="result" id="result"></td>
+			</tr>
+			<tr>
+				<td><button onclick="root()">sqrt()</button></td>
+				<td><button onclick="round()">Round()</button></td>
+				<td><button onclick="display('.')">.</button></td>
+				<td><button onclick="display('%')">%</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="display('1')">1</button></td>
+				<td><button onclick="display('2')">2</button></td>
+				<td><button onclick="display('3')">3</button></td>
+				<td><button onclick="display('/')">/</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="display('4')">4</button></td>
+				<td><button onclick="display('5')">5</button></td>
+				<td><button onclick="display('6')">6</button></td>
+				<td><button onclick="display('*')">*</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="display('7')">7</button></td>
+				<td><button onclick="display('8')">8</button></td>
+				<td><button onclick="display('9')">9</button></td>
+				<td><button onclick="display('-')">-</button></td>
+			</tr>
+			<tr>
+				<td><button onclick="display('0')">0</button></td>
+				<td colspan="2"><button onclick="solve()">=</button></td>
+				<td><button onclick="display('+')">+</button></td>
+			</tr>
+		</table>
+	</div>
+
+	<script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
